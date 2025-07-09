@@ -1,3 +1,4 @@
+std_msgs/Header header         # contains builtin_interfaces/Time stamp + string frame_id
 float64 dt                      #time between control inputs
 float64[] roll                  # degrees
 float64[] pitch                 # degrees
