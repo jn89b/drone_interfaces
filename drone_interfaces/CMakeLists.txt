@@ -33,19 +33,46 @@ if(BUILD_TESTING)
 endif()
 
 find_package(rosidl_default_generators REQUIRED)
+find_package(ament_cmake REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 
 #https://answers.ros.org/question/326008/ros2-run-symbol-not-found-on-custom-msg/
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Telem.msg"
-  "msg/NonTelem.msg"
-  "msg/Meta.msg"
   "msg/CtlTraj.msg"
-  "msg/ObsInfo.msg"
-  "msg/HLCmdBatch.msg"
-  "msg/LLCmd.msg"
   "msg/Waypoints.msg"
   "msg/RCCmd.msg"
+  "msg/ActuatorSetpoint.msg"
+  "msg/ApprovedVehicleCommand.msg"
+  "msg/AutonomyStatus.msg"
+  "msg/BodyRateThrustSetpoint.msg"
+  "msg/CommandGatewayStatus.msg"
+  "msg/GeoObservation.msg"
+  "msg/GuidanceCommand.msg"
+  "msg/MissionGoal.msg"
+  "msg/MissionRequest.msg"
+  "msg/NavigationSetpoint.msg"
+  "msg/PayloadCommand.msg"
+  "msg/PayloadFeedback.msg"
+  "msg/PayloadHealth.msg"
+  "msg/PayloadStatus.msg"
+  "msg/PayloadTask.msg"
+  "msg/SafetyStatus.msg"
+  "msg/TargetEstimate.msg"
+  "msg/TargetTrack.msg"
+  "msg/Trajectory.msg"
+  "msg/TrajectoryPoint.msg"
+  "msg/VehicleHealth.msg"
+  "msg/VehicleState.msg"
+  "msg/Waypoint.msg"
+  "srv/AbortMission.srv"
+  "srv/DisableAutonomy.srv"
+  "srv/EnableAutonomy.srv"
+  "srv/ResumeAutonomy.srv"
+  "action/ExecuteMission.action"
+  "action/ExecutePayloadTask.action"
   DEPENDENCIES geometry_msgs 
 )
 

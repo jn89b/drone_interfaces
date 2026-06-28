@@ -1,0 +1,12 @@
+# Goal
+uas_interfaces/PayloadTask task
+---
+# Result
+bool success
+string task_id
+string result_message
+---
+# Feedback
+uint8 state
+float32 progress_percent
+string detail

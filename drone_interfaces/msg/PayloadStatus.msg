@@ -1,0 +1,10 @@
+std_msgs/Header header
+string payload_id
+bool connected
+bool enabled
+string mode
+bool recording
+float64 gimbal_yaw_rad
+float64 gimbal_pitch_rad
+float64 zoom_level
+string status_summary

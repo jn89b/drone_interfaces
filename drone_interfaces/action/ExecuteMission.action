@@ -1,0 +1,12 @@
+# Goal
+uas_interfaces/MissionRequest request
+---
+# Result
+bool success
+string mission_id
+string result_message
+---
+# Feedback
+string mission_state
+float32 progress_percent
+string detail

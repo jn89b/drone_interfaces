@@ -1,0 +1,11 @@
+std_msgs/Header header
+
+bool mavlink_connected
+bool guided_mode_confirmed
+bool command_output_enabled
+bool last_command_sent
+bool last_command_accepted
+
+string last_command_id
+string last_error
+builtin_interfaces/Time last_send_time
